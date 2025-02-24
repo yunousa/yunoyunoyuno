@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内田のクールな日常チェック！10秒で終わる楽しいクイズ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-img"></div>
+    <div class="container">
+        <h1>内田のクールな日常チェック！10秒で終わる楽しいクイズ</h1>
+        <div id="questions">
+            <div class="question" id="q1">最近、休憩時間にふと考えることって何？</div>
+            <button onclick="selectAnswer('q1', 'A')">Yuno（君）から来たメッセージ、にゃんって気分で楽しく読むこともある（笑）</button>
+            <button onclick="selectAnswer('q1', 'B')">Yunoの笑顔や声が頭に浮かんで、ほっこりする</button>
+            <button onclick="selectAnswer('q1', 'C')">特に何も思わない、仕事のタスクで頭がいっぱい</button>
+            <button onclick="selectAnswer('q1', 'D')">疲れてるから、なんにも考えない</button>
+        </div>
+        <div id="next" style="display: none;">
+            <button onclick="nextQuestion()">次へ</button>
+        </div>
+        <div id="result" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
